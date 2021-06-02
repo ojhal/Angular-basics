@@ -13,4 +13,7 @@ export class AppComponent {
     age: 20,
   };
   arr = ['peter', 'joe', 'peterson'];
+  a = 100;
+  b = 100;
+  siteUrl = window.location.href;
 }

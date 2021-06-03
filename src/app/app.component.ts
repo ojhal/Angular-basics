@@ -16,4 +16,8 @@ export class AppComponent {
   a = 100;
   b = 100;
   siteUrl = window.location.href;
+
+  getName(name: ojhal) {
+    alert('ojhal patwa');
+  }
 }

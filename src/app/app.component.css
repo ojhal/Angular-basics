@@ -3,3 +3,8 @@ h1 {
   text-align: center;
 
 }
+
+button {
+  color: white;
+  background-color: blue;
+}

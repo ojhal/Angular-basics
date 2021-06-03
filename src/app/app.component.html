@@ -18,11 +18,17 @@
 <h1>Angular basics</h1>
 <app-login></app-login>
 <app-signup></app-signup>
-<button (click)="myEvent('click event')">Click me</button>
+<!-- <button (click)="myEvent('click event')">Click me</button> -->
+<!-- <br> -->
 <br>
-<br>
-<input type="text" #box (keyup.enter)="myEvent(box.value)" />
+<input type="text" #e (keyup.enter)="myEvent(e.value)" />
 <br>
 <br>
 <input type="text" (keyup)="getVal($event.target.value)" />
+<br>
+<br>
+<input type="text" #box />
+<br>
+<br>
+<button (click)="getVal(box.value)"> Get value</button>
 <p>{{currentVal}}</p>

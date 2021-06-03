@@ -26,7 +26,7 @@ export class AppComponent {
   }
   currentVal = '';
   getVal(val) {
-    // console.log(val);
+    console.log(val);
     this.currentVal = val;
   }
 }

@@ -6,15 +6,16 @@
 <h1>{{obj.age}}</h1>
 <button (click)="getName()">Get my name</button>
 <hr />
-<h2>{{arr[0]}}</h2>
+<!-- <h2>{{arr[0]}}</h2>
 <h2>{{arr[1]}}</h2>
 <h2 style="color: blue;">{{arr[2]}}</h2>
 <h2>{{arr.length}}</h2>
 <h3>{{10+10}}</h3>
 
-<h3>{{a+b}}</h3>
+<h3>{{a+b}}</h3> -->
 <h3>{{siteUrl}}</h3>
 <app-user-list></app-user-list>
+<hr />
 <h1>Angular basics</h1>
 <app-login></app-login>
 <app-signup></app-signup>
@@ -32,3 +33,29 @@
 <br>
 <button (click)="getVal(box.value)"> Get value</button>
 <p>{{currentVal}}</p>
+<hr />
+<table border="1">
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+  </tr>
+  <tr *ngFor="let item of data">
+    <td>{{item.name}}</td>
+    <td>{{item.age}}</td>
+
+  </tr>
+</table>
+<hr />
+<h1>Simple form in angular</h1>
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+  <input type="text" ngModel name="username" placeholder="enter name" />
+  <br>
+  <br>
+  <input type="password" ngModel name="password" placeholder="enter password" />
+  <br>
+  <br>
+  <input type="text" ngModel name="address" placeholder="enter address" />
+  <br>
+  <br>
+  <button> Click here</button>
+</form>

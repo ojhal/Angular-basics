@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ParseTreeResult, SafeMethodCall } from '@angular/compiler';
+import { getMaxListeners } from 'cluster';
 
 @Component({
   selector: 'app-root',
@@ -28,5 +30,22 @@ export class AppComponent {
   getVal(val) {
     console.log(val);
     this.currentVal = val;
+  }
+  data = [
+    {
+      name: 'peter',
+      age: 25,
+    },
+    {
+      name: 'sam',
+      age: 24,
+    },
+    {
+      name: 'joy',
+      age: 26,
+    },
+  ];
+  getUserValue(value) {
+    console.log(value);
   }
 }

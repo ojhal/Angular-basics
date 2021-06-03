@@ -22,3 +22,7 @@
 <br>
 <br>
 <input type="text" #box (keyup.enter)="myEvent(box.value)" />
+<br>
+<br>
+<input type="text" (keyup)="getVal($event.target.value)" />
+<p>{{currentVal}}</p>

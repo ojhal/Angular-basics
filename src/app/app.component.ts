@@ -24,4 +24,9 @@ export class AppComponent {
   myEvent(evt) {
     console.log(evt);
   }
+  currentVal = '';
+  getVal(val) {
+    // console.log(val);
+    this.currentVal = val;
+  }
 }

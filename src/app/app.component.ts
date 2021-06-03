@@ -20,4 +20,8 @@ export class AppComponent {
   getName(name: any) {
     alert('please try again');
   }
+
+  myEvent(evt) {
+    console.log(evt);
+  }
 }

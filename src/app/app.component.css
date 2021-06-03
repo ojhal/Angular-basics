@@ -7,4 +7,12 @@ h1 {
 button {
   color: white;
   background-color: blue;
+
+
+}
+
+button:hover {
+  background-color: red;
+  /* Green */
+  color: white;
 }
